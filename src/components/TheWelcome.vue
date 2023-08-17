@@ -1,9 +1,11 @@
 <script setup>
 import IconLinkedin from '../components/icons/IconLinkedin.vue';
 import IconGithub from '../components/icons/IconGithub.vue';
+import IconYoutube from '../components/icons/IconYoutube.vue';
+import IconInstagram from '../components/icons/IconInstagram.vue';
 
 const getImgUrl = (img) => {
-  return (`src/assets/img/${img}`);
+  return new URL(`/src/assets/img/${img}`, import.meta.url).href;
 }
 </script>
 
@@ -25,12 +27,18 @@ const getImgUrl = (img) => {
       <div class="social py-4">
         <h2 class="mb-5 font-bold">Lets keep in touch:</h2>
         <div class="flex flex-row items-center gap-3">
+          <a href="https://www.youtube.com/channel/UCHVPpW8NH62az06fMRaVGMg" target="_blank">
+            <IconYoutube />
+          </a>
+          <a href="https://www.instagram.com/alexey_zlotnik/" target="_blank">
+            <IconInstagram />
+          </a>
           <a href="https://www.linkedin.com/in/alexeyzlotnik/" target="_blank">
-            <IconLinkedin />
-          </a>
-          <a href="https://github.com/alexeyzlotnik" target="_blank">
-            <IconGithub />
-          </a>
+              <IconLinkedin />
+            </a>
+            <a href="https://github.com/alexeyzlotnik" target="_blank">
+              <IconGithub />
+            </a>
         </div>
       </div>
 

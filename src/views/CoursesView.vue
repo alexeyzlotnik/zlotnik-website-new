@@ -43,10 +43,10 @@ const setImageForCourse = (title) => {
 
    switch (title) {
       case 'Upwork. Как начать зарабатывать на Фрилансе':
-         courseImage = 'src/assets/img/udemy-old.jpg';
+         courseImage = new URL('/src/assets/img/udemy-old.jpg', import.meta.url).href;
          break;
       default:
-         courseImage = 'src/assets/img/udemy-new.jpg';
+         courseImage = new URL('/src/assets/img/udemy-new.jpg', import.meta.url).href;
          break;
    }
 
