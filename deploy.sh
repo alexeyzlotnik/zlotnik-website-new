@@ -1,10 +1,25 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
-# Remove local changes
-git checkout -- .
+# abort on errors
+set -e
 
-# update source code
-git pull
-
-npm install
+# build
 npm run build
+
+# navigate into the build output directory
+cd dist
+
+# if you are deploying to a custom domain
+# echo 'www.example.com' > CNAME
+
+git init
+git add -A
+git commit -m 'deploy'
+
+# if you are deploying to https://<USERNAME>.github.io
+git push -f git@github.com:<alexeyzlotnik>/<alexeyzlotnik>.github.io.git main
+
+# if you are deploying to https://<USERNAME>.github.io/<REPO>
+# git push -f git@github.com:<USERNAME>/<REPO>.git main:gh-pages
+
+cd -
