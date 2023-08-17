@@ -21,7 +21,8 @@ const getImgUrl = (img) => {
       <div class="info-text py-4">
         <h1 class="text-2xl lg:text-4xl mb-5">Hi, my name is Alexey Zlotnik</h1>
         <p>I'm passionate Front-End / VueJS developer.</p>
-        <p>Currently working full-time at a Canadian Startup.</p>
+        <p class="mt-3">Used to be a <a href="https://www.upwork.com/freelancers/~0180ca705bcfcbc2f3" target="_blank" class="underline">freelancer on Upwork</a></p>
+        <p>Now I'm working full-time at a Canadian Startup.</p>
       </div>
 
       <div class="social py-4">
