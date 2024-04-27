@@ -33,7 +33,7 @@ const UdemyApi = {
     }
 
     return fetch(
-      'https://www.udemy.com/instructor-api/v1/taught-courses/reviews/?page_size=40',
+      'https://www.udemy.com/instructor-api/v1/taught-courses/reviews/?page_size=100',
       requestOptions
     )
       .then((response) => response.text())

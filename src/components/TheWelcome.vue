@@ -3,9 +3,16 @@ import IconLinkedin from '../components/icons/IconLinkedin.vue';
 import IconGithub from '../components/icons/IconGithub.vue';
 import IconYoutube from '../components/icons/IconYoutube.vue';
 import IconInstagram from '../components/icons/IconInstagram.vue';
+import Button from 'primevue/button';
+import router from '@/router';
+
 
 const getImgUrl = (img) => {
   return new URL(`/src/assets/img/${img}`, import.meta.url).href;
+}
+
+function openPage(page) {
+  router.push({ name: page });
 }
 </script>
 
@@ -43,7 +50,7 @@ const getImgUrl = (img) => {
           </div>
 
           <div class="mt-10">
-            <router-link :to="{name: 'courses'}" class="button bg-black">Check out my freelance courses</router-link>
+            <Button label="Check out my freelance courses" icon="pi pi-arrow-right" iconPos="right" @click="openPage('courses')" />
           </div>
         </div>
 

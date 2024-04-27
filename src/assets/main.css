@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap');
+@import './styles.scss';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@layer tailwind-base, primevue, tailwind-utilities;
+
+@layer tailwind-base {
+    @tailwind base;
+}
+
+@layer tailwind-utilities {
+    @tailwind components;
+    @tailwind utilities;
+}
 
 
 :root{
@@ -78,7 +86,7 @@ header{
   padding: 80px 0;
 }
 
-.button{
+/* .button{
   background: transparent;
   border: 1px solid var(--color-white);
   padding: 7px 20px;
@@ -95,4 +103,4 @@ header{
 .button.bg-black{
   border: 1px solid var(--color-black);
   color: var(--color-black);
-}
+} */
