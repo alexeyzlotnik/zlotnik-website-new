@@ -12,42 +12,46 @@ const getImgUrl = (img) => {
 <template>
   <div class="welcome page flex flex-col lg:flex-row items-start lg:items-center justify-center gap-10">
 
-    <div class="photo lg:w-1/3">
-      <img :src="getImgUrl('zlotnik.jpg')" alt="Alexey Zlotnik" class="rounded-full lg:rounded" />
-    </div>
-
-    <div class="info lg:w-2/3 ">
-
-      <div class="info-text py-4">
-        <h1 class="text-2xl lg:text-4xl mb-5">Hi, my name is Alexey Zlotnik</h1>
-        <p>I'm passionate Front-End / VueJS developer.</p>
-        <p class="mt-3">Used to be a <a href="https://www.upwork.com/freelancers/~0180ca705bcfcbc2f3" target="_blank" class="underline">freelancer on Upwork</a></p>
-        <p>Now I'm working full-time at a Canadian Startup.</p>
+      <div class="photo lg:w-1/3">
+        <img :src="getImgUrl('zlotnik.jpg')" alt="Alexey Zlotnik" class="rounded-full lg:rounded" />
       </div>
 
-      <div class="social py-4">
-        <h2 class="mb-5 font-bold">Lets keep in touch:</h2>
-        <div class="flex flex-row items-center gap-3">
-          <a href="https://www.youtube.com/channel/UCHVPpW8NH62az06fMRaVGMg" target="_blank">
-            <IconYoutube />
-          </a>
-          <a href="https://www.instagram.com/alexey_zlotnik/" target="_blank">
-            <IconInstagram />
-          </a>
-          <a href="https://www.linkedin.com/in/alexeyzlotnik/" target="_blank">
-              <IconLinkedin />
-            </a>
-            <a href="https://github.com/alexeyzlotnik" target="_blank">
-              <IconGithub />
-            </a>
+      <div class="info lg:w-2/3 ">
+
+        <div class="info-text py-4">
+          <h1 class="text-2xl lg:text-4xl mb-5">Hi, my name is Alexey Zlotnik</h1>
+          <p>I'm passionate Front-End / VueJS developer.</p>
+          <p class="mt-3">Used to be a <a href="https://www.upwork.com/freelancers/~0180ca705bcfcbc2f3" target="_blank" class="underline">freelancer on Upwork</a></p>
+          <p>Now I'm working full-time at a Canadian Startup.</p>
         </div>
+
+        <div class="social py-4">
+          <h2 class="mb-5 font-bold">Lets keep in touch:</h2>
+          <div class="flex flex-row items-center gap-3">
+            <a href="https://www.youtube.com/channel/UCHVPpW8NH62az06fMRaVGMg" target="_blank">
+              <IconYoutube />
+            </a>
+            <a href="https://www.instagram.com/alexey_zlotnik/" target="_blank">
+              <IconInstagram />
+            </a>
+            <a href="https://www.linkedin.com/in/alexeyzlotnik/" target="_blank">
+                <IconLinkedin />
+              </a>
+              <a href="https://github.com/alexeyzlotnik" target="_blank">
+                <IconGithub />
+              </a>
+          </div>
+
+          <div class="mt-10">
+            <router-link :to="{name: 'courses'}" class="button bg-black">Check out my freelance courses</router-link>
+          </div>
+        </div>
+
       </div>
 
     </div>
 
-  </div>
-
-</template>
+  </template>
 
 <style scoped>
 .welcome {
