@@ -1,8 +1,8 @@
 <script setup>
 
 import { useDarkMode } from '../stores/store';
-const darkMode = useDarkMode();
 
+const darkMode = useDarkMode();
 </script>
 
 <template>

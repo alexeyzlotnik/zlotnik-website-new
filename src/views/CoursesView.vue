@@ -1,7 +1,7 @@
 <template>
    <div class="my-courses page">
       <div class="courses mb-14">
-         <h1 class="mb-5 font-bold text-2xl lg:text-4xl">My courses</h1>
+         <h1 class="mb-5 font-bold text-2xl lg:text-4xl px-6">My courses</h1>
 
          <DataView :value="filteredCourses" :layout="layout" v-if="loaded">
             <template #header>
@@ -95,7 +95,7 @@
       <div class="reviews" v-if="loaded">
          <h2 class="font-bold text-2xl">Reviews</h2>
          <div class="grid grid-cols-3 gap-5 mt-3">
-            <Card v-for="(review, index) in filteredReviews" :key="index" class="mb-5 col-span-1">
+            <Card v-for="(review, index) in filteredReviews" :key="index" class="mb-5 col-span-1 border surface-0">
                <template #title>
                   <div class="flex gap-3">
                      {{ review.user.title }}

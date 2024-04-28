@@ -1,5 +1,5 @@
 <script setup>
-
+import Button from 'primevue/button';
 </script>
 
 <template>
@@ -10,6 +10,7 @@
       <div class="flex flex-col my-3">
          <div class="my-3 flex flex-col gap-3">
             <span>– United24 – OFFICIAL FUNDRAISING PLATFORM OF UKRAINE</span>
+            <Button label="Submit" />
             <a href="https://u24.gov.ua/" target="_blank" rel="noopener noreferrer" class="button bg-black mt-auto">Donate</a>
          </div>
          <div class="my-3 flex flex-col gap-3">
