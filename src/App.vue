@@ -24,6 +24,7 @@ onMounted(() => {
           <div class="flex gap-5 items-center">
             <router-link to="/">Home</router-link>
             <router-link to="/courses">Courses</router-link>
+            <router-link to="/projects">Projects</router-link>
             <router-link to="/donate">Support 🇺🇦</router-link>
             <DarkThemeSwitcher />
           </div>
