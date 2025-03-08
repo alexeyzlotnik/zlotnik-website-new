@@ -10,14 +10,14 @@ const projects = ref([
       title: "Tool Farm",
       url: "https://tool-farm.com",
       description: "Essential Tools for Developers and Marketers",
-      image: "src/assets/img/tool-farm.jpeg",
+      image: "@/assets/img/tool-farm.jpeg",
       tags: ['nuxtjs']
    },
    {
       title: "Wishlister",
       url: "https://wishlister.online",
       description: "Your Ultimate Wishlist Platform",
-      image: "src/assets/img/wishlister.jpeg",
+      image: "@/assets/img/wishlister.jpeg",
       tags: ['nuxtjs', 'SQLite']
    }
 ]);

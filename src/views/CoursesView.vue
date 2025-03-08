@@ -9,7 +9,7 @@ const courses = ref([
          is_published: true,
          rating: 4.7,
          referralCode: 'C027EE01186CAA57B3C5',
-         image: 'src/assets/img/udemy-english.webp'
+         image: '@/assets/img/udemy-english.webp'
         },
         {
           title: "Как начать карьеру на Фрилансе. Заработок на Upwork в 2023",
@@ -17,7 +17,7 @@ const courses = ref([
           is_published: true,
           rating: 4.8,
           referralCode: '71D1309E4547E0389742',
-          image: 'src/assets/img/udemy-new.webp'
+          image: '@/assets/img/udemy-new.webp'
         },
         {
           title: "Upwork. Как начать зарабатывать на Фрилансе",
@@ -25,7 +25,7 @@ const courses = ref([
           is_published: true,
           rating: 4.7,
           referralCode: '749447CC657833204039',
-          image: 'src/assets/img/udemy-old.jpg'
+          image: '@/assets/img/udemy-old.jpg'
         }
 ]);
 
