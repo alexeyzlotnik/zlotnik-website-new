@@ -1,6 +1,7 @@
 <script setup>
 import IconLinkedin from '../components/icons/IconLinkedin.vue';
 import IconGithub from '../components/icons/IconGithub.vue';
+import zlotnikImage from '@/assets/img/zlotnik.jpg';
 
 const getImgUrl = (img) => {
   return new URL(`@/assets/img/${img}`, import.meta.url).href;
@@ -11,7 +12,7 @@ const getImgUrl = (img) => {
   <div class="welcome page flex flex-col lg:flex-row items-start lg:items-center justify-center gap-10">
 
     <div class="photo lg:w-1/3">
-      <img :src="getImgUrl('zlotnik.jpg')" alt="Alexey Zlotnik" class="rounded-full lg:rounded" />
+      <img :src="zlotnikImage" alt="Alexey Zlotnik" class="rounded-full lg:rounded" />
     </div>
 
     <div class="info lg:w-2/3 ">
