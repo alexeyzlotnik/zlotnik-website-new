@@ -3,7 +3,7 @@ import IconLinkedin from '../components/icons/IconLinkedin.vue';
 import IconGithub from '../components/icons/IconGithub.vue';
 
 const getImgUrl = (img) => {
-  return (`@/assets/img/${img}`);
+  return new URL(`@/assets/img/${img}`, import.meta.url).href;
 }
 </script>
 

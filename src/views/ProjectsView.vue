@@ -1,5 +1,7 @@
 <script setup>
 import { onMounted, ref, computed } from 'vue';
+import toolFarm from '@/assets/img/tool-farm.jpeg';
+import wishlister from '@/assets/img/wishlister.jpeg';
 
 // DATA
 const loaded = ref(false);
@@ -10,14 +12,14 @@ const projects = ref([
       title: "Tool Farm",
       url: "https://tool-farm.com",
       description: "Essential Tools for Developers and Marketers",
-      image: "@/assets/img/tool-farm.jpeg",
+      image: toolFarm,
       tags: ['nuxtjs']
    },
    {
       title: "Wishlister",
       url: "https://wishlister.online",
       description: "Your Ultimate Wishlist Platform",
-      image: "@/assets/img/wishlister.jpeg",
+      image: wishlister,
       tags: ['nuxtjs', 'SQLite']
    }
 ]);

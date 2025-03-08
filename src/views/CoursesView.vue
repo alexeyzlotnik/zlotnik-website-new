@@ -1,5 +1,8 @@
 <script setup>
 import { onMounted, ref, computed } from 'vue';
+import udemyEnglish from '@/assets/img/udemy-english.webp';
+import udemyNew from '@/assets/img/udemy-new.webp';
+import udemyOld from '@/assets/img/udemy-old.jpg';
 
 // DATA
 const courses = ref([
@@ -9,7 +12,7 @@ const courses = ref([
          is_published: true,
          rating: 4.7,
          referralCode: 'C027EE01186CAA57B3C5',
-         image: '@/assets/img/udemy-english.webp'
+         image: udemyEnglish
         },
         {
           title: "Как начать карьеру на Фрилансе. Заработок на Upwork в 2023",
@@ -17,7 +20,7 @@ const courses = ref([
           is_published: true,
           rating: 4.8,
           referralCode: '71D1309E4547E0389742',
-          image: '@/assets/img/udemy-new.webp'
+          image: udemyNew
         },
         {
           title: "Upwork. Как начать зарабатывать на Фрилансе",
@@ -25,7 +28,7 @@ const courses = ref([
           is_published: true,
           rating: 4.7,
           referralCode: '749447CC657833204039',
-          image: '@/assets/img/udemy-old.jpg'
+          image: udemyOld
         }
 ]);
 
